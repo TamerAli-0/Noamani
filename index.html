@@ -1,401 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Noamani</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet"  
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
-  <body>
-    <!--Nav bar-->
-    <section class="head-section">
-      <header class="container">
-        <nav class="navbar navbar-expand-lg navbar-light penguin-nabbar">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <img
-                src="Images/logo.png"
-                alt=""
-                class="penguin-logo img-fluid"
-              />
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div
-              class="collapse navbar-collapse justify-content-end"
-              id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#products">Products</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#about-us">About us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact-us">Contact us</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
-    </section>
 
-    <main>
-      <!--Banner section-->
-      <section class="head-section">
-        <div class="pt-2 pb-5 container">
-          <div class="row d-flex align-items-center">
-            <div class="col-md-6 px-3">
-              <h1 id="text-style">mode de vie perfumant</h1>
-              <!-- <h1 class="text-style2">for Winter</h1> -->
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae itaque totam reprehenderit minus ducimus quasi \n 
-                unde consequuntur officia quod culpa autem non vero maiores neque eum, facilis maxime. Voluptate, illum?
-              </p>
-              <button type="button" class="btn penguin-btn">
-                <i class="fa fa-shopping-cart"></i> BUY NOW
-              </button>
-            </div>
-            <div class="col-md-6 how-img px-5">
-              <img src="Images/bannar-profile.png" class="img-fluid" alt="" />
-            </div>
-          </div>
-        </div>
-      </section>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Noamani</title>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+ 
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section id="header">
+            <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+            <nav>
+                <ul id="navbar">
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html"><i class="fa far fa-shopping-bag"></i></a></li>
+                </ul>
+            </nav>
+        </section>
+        
+        </section>
 
-      <!--Woman collection section-->
-      <section id="products" class="container mt-5">
-        <h1>Woman Jacket</h1>
-        <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
-          <div class="col">
-            <div class="card h-100 penguin-card-border shadow rounded">
-              <img
-                src="Images/woman/woman-jak1.png"
-                class="card-img-top penguin-card-img w-75"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">ORIENTAL OUD </h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa 
-                </p>
-              </div>
-              <div
-                class="card-footer d-flex justify-content-between align-items-center penguin-card-footer"
-              >
-                <div>
-                  <h3 class="price-text-style">150 AED</h3>
-                </div>
-                <div>
-                  <button type="button" class="btn penguin-btn">
-                    <i class="fa fa-shopping-cart"></i> BUY NOW
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100 penguin-card-border shadow rounded">
-              <img
-                src="Images/woman/woman-jak2.png"
-                class="card-img-top penguin-card-img w-75"
-                alt="..."/>
-              <div class="card-body">
-                <h5 class="card-title">MYSTIQUE OUD</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, officiis? Explicabo 
-                </p>
-              </div>
-              <div
-                class="card-footer d-flex justify-content-between align-items-center penguin-card-footer">
-                <div>
-                  <h3 class="price-text-style">150 AED</h3>
-                </div>
-                <div>
-                  <button type="button" class="btn penguin-btn">
-                    <i class="fa fa-shopping-cart"></i> BUY NOW
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100 penguin-card-border shadow rounded">
-              <img
-                src="Images/woman/woman-jak3.png"
-                class="card-img-top penguin-card-img w-75"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">NORTHERN LIGTHS</h5>
-                <p class="card-text">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
-                </p>
-              </div>
-              <div
-                class="card-footer d-flex justify-content-between align-items-center penguin-card-footer"
-              >
-                <div>
-                  <h3 class="price-text-style">5000Rs</h3>
-                </div>
-                <div>
-                  <button type="button" class="btn penguin-btn">
-                    <i class="fa fa-shopping-cart"></i> BUY NOW
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <!--Men collection section-->
-      <section class="container mt-5">
-        <h1 class="penguin-catagory">Woman Jacket</h1>
-        <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
-          <div class="col">
-            <div class="card h-100 penguin-card-border shadow rounded">
-              <img
-                src="Images/man/man-jak1.png"
-                class="card-img-top penguin-card-img w-75"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Snowboard Jacket Mens</h5>
-                <p class="card-text">
-                  Snowboard jacket are ferfect match for people in moutain areas
-                  or for tourist.
-                </p>
-              </div>
-              <div
-                class="card-footer d-flex justify-content-between align-items-center penguin-card-footer"
-              >
-                <div>
-                  <h3 class="price-text-style">3500Rs</h3>
-                </div>
-                <div>
-                  <button type="button" class="btn penguin-btn">
-                    <i class="fa fa-shopping-cart"></i> BUY NOW
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100 penguin-card-border shadow rounded">
-              <img
-                src="Images/man/man-jak3.png"
-                class="card-img-top penguin-card-img w-75"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Man Leather Jackets</h5>
-                <p class="card-text">
-                  Perfect bike riding jacket available with different color and
-                  sizes.
-                </p>
-              </div>
-              <div
-                class="card-footer d-flex justify-content-between align-items-center penguin-card-footer"
-              >
-                <div>
-                  <h3 class="price-text-style">4500Rs</h3>
-                </div>
-                <div>
-                  <button type="button" class="btn penguin-btn">
-                    <i class="fa fa-shopping-cart"></i> BUY NOW
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100 penguin-card-border shadow rounded">
-              <img
-                src="Images/man/man-jak2.png"
-                class="card-img-top penguin-card-img w-75"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Man Casual Jackets</h5>
-                <p class="card-text">
-                  Matte Black Jacket with all sizes available.
-                </p>
-              </div>
-              <div
-                class="card-footer d-flex justify-content-between align-items-center penguin-card-footer"
-              >
-                <div>
-                  <h3 class="price-text-style">3000Rs</h3>
-                </div>
-                <div>
-                  <button type="button" class="btn penguin-btn">
-                    <i class="fa fa-shopping-cart"></i> BUY NOW
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        <section id="hero">
+            <h2>Good Deals</h2>
+            <h1>In Noamani</h1>
+            <p>save more with some friends coupons</p>
+            <button>Shop Now</button>
+        </section>
 
-      <!--Some information section-->
-      <section class="container mt-5 pt-5">
-        <div class="pt-2 pb-5 container">
-          <div
-            class="row d-flex align-items-center flex-column-reverse flex-lg-row"
-          >
-            <div class="col-md-6 px-3">
-              <div
-                class="card mb-3 penguin-card-border shadow"
-                style="max-width: 540px;"
-              >
-                <div class="row g-0">
-                  <div class="col-md-3">
-                    <img
-                      src="icon/image 12.png"
-                      class="w-50 penguin-info"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="col-md-9">
-                    <div class="card-body">
-                      <h5 class="card-title">Find the Perfect Fit</h5>
-                      <p class="card-text">
-                        Everybody is different, which is why we offer styles for
-                        every body.
-                      </p>
+        <section id="feature" class="section-p1">
+            <div class="fe-box">
+                <img src="img/features/f1.jpg" alt="">
+                <h6>World-Wide</h6>
+            </div>
+            <div class="fe-box">
+                <img src="img/features/f2.jpg" alt="">
+                <h6>High-Quality</h6>
+            </div>
+            <div class="fe-box">
+                <img src="img/features/f3.png" alt="">
+                <h6>Save Money</h6>
+            </div>
+            <div class="fe-box">
+                <img src="img/features/f4.png" alt="">
+                <h6>Happy Life</h6>
+            </div>
+            <div class="fe-box">
+                <img src="img/features/f5.jpg" alt="">
+                <h6>Variety Of Perfumes</h6>
+            </div>
+            <div class="fe-box">
+                <img src="img/features/f6.png" alt="">
+                <h6>24/7 Support</h6>
+            </div>
+        </section>
+        <section id="product1" class="section-p1">
+            <h2>Featured Products</h2>
+            <p>The Most Loved Perfume Scents</p>
+            <div class="pro-container">
+                <div class="pro">
+                    <img src="img/products/f1.jpg" alt="">
+                    <div class="des">
+                        <span>Noamani</span>
+                        <h5>BEAU DE PARFUM</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>150AED</h4>
                     </div>
-                  </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
                 </div>
-              </div>
-              <div
-                class="card mb-3 penguin-card-border shadow"
-                style="max-width: 540px;"
-              >
-                <div class="row g-0">
-                  <div class="col-md-3">
-                    <img
-                      src="icon/image 13.png"
-                      class="w-50 penguin-info"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="col-md-9">
-                    <div class="card-body">
-                      <h5 class="card-title">Free Exchanges</h5>
-                      <p class="card-text">
-                        One of the many reasons you can shop with peace of mind.
-                      </p>
+                <div class="pro">
+                    <img src="img/products/f2.jpg" alt="">
+                    <div class="des">
+                        <span>Noamani</span>
+                        <h5>GABRIELLE CHANEL PARIS</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>200AED</h4>
                     </div>
-                  </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
                 </div>
-              </div>
-              <div
-                class="card mb-3 penguin-card-border shadow"
-                style="max-width: 540px;"
-              >
-                <div class="row g-0">
-                  <div class="col-md-3">
-                    <img
-                      src="icon/image 14.png"
-                      class="w-50 penguin-info"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="col-md-9">
-                    <div class="card-body">
-                      <h5 class="card-title">Contact Our Seller</h5>
-                      <p class="card-text">
-                        They are here to help you. That's quite literally what
-                        we pay them for.
-                      </p>
+                <div class="pro">
+                    <img src="img/products/f3.jpg" alt="">
+                    <div class="des">
+                        <span>Noamani</span>
+                        <h5>JAGUAR CLASSIC RED</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>140AED</h4>
                     </div>
-                  </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
                 </div>
-              </div>
+                <div class="pro">
+                    <img src="img/products/f4.jpg" alt="">
+                    <div class="des">
+                        <span>Noamani</span>
+                        <h5>PINK PANTHER</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>75AED</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro">
+                    <img src="img/products/f5.jpg" alt="">
+                    <div class="des">
+                        <span>Noamani</span>
+                        <h5>TEARS OF SORROW</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>100AED</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro">
+                    <img src="img/products/f6.jpg" alt="">
+                    <div class="des">
+                        <span>Noamani</span>
+                        <h5>NIGHT SKY</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>300AED</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro">
+                    <img src="img/products/f7.jpg" alt="">
+                    <div class="des">
+                        <span>Noamani</span>
+                        <h5>JO MALONE LONDON</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>200AED</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro">
+                    <img src="img/products/f8.jpg" alt="">
+                    <div class="des">
+                        <span>Noamani</span>
+                        <h5>AQUA ALLEGORIA</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>299AED</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
             </div>
-            <div class="col-md-6 how-img px-5">
-              <img src="icon/XMLID 1.png" class="img-fluid" alt="" />
+            
+        </section>
+        <section id="sm-banner" class="section-p1">
+            <div class="banner-box">
+                <h4>Crazy Deals</h4>
+                <h2>Buy 1 get a discount</h2>
+                <span>The most profound smell is on sale</span>
+                <button class="white">Learn More</button>
             </div>
-          </div>
-        </div>
-      </section>
-    </main>
+            <div class="banner-box banner-box2">
+                <h4>Summer Deals</h4>
+                <h2>Upcomming Season</h2>
+                <span>The most profound smell is on sale</span>
+                <button class="white">Collection</button>
+            </div>
+        </section>
+        <section id="banner3">
+            <div class="banner-box">
+                <h2>SEASONAL SALES</h2>
+                <h3>Winter Collection <br/>-15% OFF</h3>
+            </div>
+            <div class="banner-box banner-box2">
+                <h2>NEW SMELL COLLECTIONS</h2>
+                <h3>Spring / Summer 2024</h3>
+            </div>
+            <div class="banner-box banner-box3">
+                <h2>SYNTHETIC PERFUMES</h2>
+                <h3>Half The Price</h3>
+            </div>
+        </section>
 
-    <!--Footer section-->
-    <section class="footer-section">
-      <div class="container pb-5">
-        <div class="row">
-          <div id="about-us" class="col-sm pe-5 pt-3">
-            <img src="Images/logo.png" alt="" class="penguin-logo img-fluid" />
-            <hr />
-            <p>
-              Changing the way you dress will change the way you feel. When you
-              are well dressed and look good you will automatically feel better.
-              When you feel good about yourself, you are more likely to feel
-              good inside, treat others better, and have more energy.
-            </p>
-          </div>
-          <div id="contact-us" class="col-sm pe-5 pt-3">
-            <h5>Contact us:</h5>
-            <hr />
-            <p>
-              <i class="fa fa-map-marker fa-1x"> </i>Shradha Park, B-37/39
-              Hingna–Wadi Link Road, Nagpur - 440016.
-            </p>
-            <p>
-              <i class="fa fa-envelope-open"></i>
-              vaibhav.mathane.cse@ghrietn.raisoni.net
-            </p>
-            <p><i class="fa fa-phone"></i> +911234567891</p>
-          </div>
-          <div class="col-sm pe-5 pt-3">
-            <div>
-              <h5>Get in Touch</h5>
-              <hr />
-              <i class="fa fa-facebook-square fa-2x pe-3"> </i>
-              <i class="fa fa-twitter-square fa-2x pe-3"></i>
-              <i class="fa fa-linkedin fa-2x pe-3"></i>
-            </div>
-            <div class="pt-5">
-              <h5>Pay with</h5>
-              <hr />
-              <img src="icon/pay.png" class="w-75" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <footer>
-        <hr />
-        <p class="text-center">
-          © Winter Fashion 2021, all rights reserved by Vaibhav Mathane B_61 CSE
-          5th Sem 3rd Year
-        </p>
-      </footer>
-    </section>
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+        <section id="product1"></section>
+        <script src="script.js"></script>
+    </body>
+
 </html>
