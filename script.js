@@ -30,45 +30,47 @@ window.addEventListener('scroll', () => {
     lastScrollTop = scrollTop;
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    var shopLink = document.querySelector('.dropdown > a');
+    var dropdownContent = document.querySelector('.dropdown-content');
 
-    document.addEventListener("DOMContentLoaded", function() {
-        var dropdown = document.querySelector(".dropdown");
-        var dropdownContent = dropdown.querySelector(".dropdown-content");
+    // Function to show dropdown
+    function showDropdown() {
+        dropdownContent.style.display = 'block';
+    }
 
-        dropdown.addEventListener("mouseenter", function() {
-            dropdownContent.style.display = "block";
-            setTimeout(function() {
-                dropdownContent.style.opacity = "1";
-                dropdownContent.style.transform = "translateX(-50%) translateY(0)";
-            }, 10); // Small delay to ensure display change is rendered
-        });
+    // Function to hide dropdown
+    function hideDropdown() {
+        dropdownContent.style.display = 'none';
+    }
 
-        dropdown.addEventListener("mouseleave", function() {
-            setTimeout(function() {
-                if (!dropdownContent.matches(':hover')) {
-                    dropdownContent.style.opacity = "0";
-                    dropdownContent.style.transform = "translateX(-50%) translateY(-10px)";
-                    setTimeout(function() {
-                        dropdownContent.style.display = "none";
-                    }, 300); // Match the transition duration
-                }
-            }, 300); // Slight delay to allow hover over dropdown
-        });
-
-        dropdownContent.addEventListener("mouseleave", function() {
-            setTimeout(function() {
-                if (!dropdown.matches(':hover')) {
-                    dropdownContent.style.opacity = "0";
-                    dropdownContent.style.transform = "translateX(-50%) translateY(-10px)";
-                    setTimeout(function() {
-                        dropdownContent.style.display = "none";
-                    }, 300); // Match the transition duration
-                }
-            }, 300); // Slight delay to allow hover over dropdown
-        });
+    // Show dropdown when clicking on "Shop"
+    shopLink.addEventListener('click', function (event) {
+        event.preventDefault();
+        if (dropdownContent.style.display === 'block') {
+            hideDropdown();
+        } else {
+            showDropdown();
+        }
     });
 
+    // Hide dropdown when mouse leaves the dropdown area
+    dropdownContent.addEventListener('mouseleave', function () {
+        hideDropdown();
+    });
 
+    // Stop propagation of click event to prevent immediate hiding when clicking within dropdown
+    dropdownContent.addEventListener('click', function (event) {
+        event.stopPropagation();
+    });
+
+    // Hide dropdown when clicking anywhere outside the dropdown
+    document.addEventListener('click', function (event) {
+        if (!dropdownContent.contains(event.target) && !shopLink.contains(event.target)) {
+            hideDropdown();
+        }
+    });
+});
 
 
 

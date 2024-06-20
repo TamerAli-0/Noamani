@@ -154,38 +154,41 @@ body {
 /* style.css */
 
 /* Dropdown Styles */
-#navbar .dropdown-content {
+/* Dropdown container */
+/* Dropdown container */
+.dropdown {
+  position: relative;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
   display: none;
   position: absolute;
   background-color: #000000;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  top: 100%; /* Adjust this if needed */
   left: 50%;
-  transform: translateX(-50%) translateY(-10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  opacity: 0;
-  margin-top: 10px; /* Margin to create space */
+  transform: translateX(-50%);
+  margin-top: 10px;
   padding-bottom: 10px;
+  list-style-type: none;
 }
 
-#navbar .dropdown-content a {
-  color: rgb(255, 255, 255);
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: whitesmoke;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
-/* #navbar .dropdown-content a:hover {
-  background-color: #f1f1f1;
-} */
-
-#navbar .dropdown:hover .dropdown-content,
-#navbar .dropdown-content:hover {
-  display: block;
-  opacity: 1;
-  transform: translateX(-50%) translateY(0); /* Final position to make it appear as coming down */
+/* Remove hover functionality */
+#navbar .dropdown:hover .dropdown-content {
+  display: none; /* Ensure hover does not show dropdown */
 }
+
 
 
 
