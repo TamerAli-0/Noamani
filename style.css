@@ -131,6 +131,64 @@ body {
   display: none;
  }
 
+
+/* style.css */
+
+/* style.css */
+
+/* Dropdown Styles */
+/* style.css */
+
+/* General Dropdown Styles */
+/* style.css */
+
+
+
+#navbar li a:hover, .dropdown:hover .dropbtn {
+  background-color: #111;
+}
+
+/* style.css */
+
+/* General Dropdown Styles */
+/* style.css */
+
+/* Dropdown Styles */
+#navbar .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%) translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  margin-top: 10px; /* Margin to create space */
+  padding-bottom: 10px;
+}
+
+#navbar .dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* #navbar .dropdown-content a:hover {
+  background-color: #f1f1f1;
+} */
+
+#navbar .dropdown:hover .dropdown-content,
+#navbar .dropdown-content:hover {
+  display: block;
+  opacity: 1;
+  transform: translateX(-50%) translateY(0); /* Final position to make it appear as coming down */
+}
+
+
+
 /* Home Page */
 
 #hero {
@@ -555,6 +613,16 @@ padding: 40px 0 20px 0;
 #prodetails .single-pro-details span{
   line-height: 25px;
 }
+
+
+/* Blog Page */
+/* #page-header.blog-header{
+  background-image: url("img/banner/b19.jpg");
+} */
+
+
+
+
 
 /* Responsive Media App */
 @media (max-width: 1024px) {
