@@ -808,20 +808,16 @@ padding: 40px 0 20px 0;
   }
    /* Adjusting dropdown styles for mobile phones */
   .dropdown-content {
-    width: 100%; /* Make dropdown full width */
-    left: 0; /* Align to the left */
+    width: 100-px; /* Make dropdown wider */
+    left: -5%; /* Center dropdown */
     transform: none; /* Remove transform to prevent overflow */
     margin-top: 10px;
   }
 
   .dropdown-content a {
-    padding: 10px 14px;
-    font-size: 12px; /* Adjust font size for better readability */
-    white-space: normal;
-    overflow: visible;
-    text-overflow: clip;
-    display: block;
-    width: 100%;
+    padding: 12px 16px;
+    font-size: 14px;
+    
   }
 }
 
