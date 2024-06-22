@@ -719,6 +719,24 @@ padding: 40px 0 20px 0;
   #banner3 .banner-box {
     width: 28%;
   }
+  /* Adjusting dropdown styles for tablets */
+  .dropdown-content {
+    width: 100-px; /* Make dropdown wider */
+    left: -5%; /* Center dropdown */
+    transform: none; /* Remove transform to prevent overflow */
+    margin-top: 10px;
+  }
+
+  .dropdown-content a {
+    padding: 12px 16px;
+    font-size: 14px;
+    
+  }
+
+}
+#shop-perm-hov{
+  background-color: #fcfcfc4b;
+  
 }
 
 @media (max-width: 477px) {
@@ -788,4 +806,26 @@ padding: 40px 0 20px 0;
   #prodetails .single-pro-details{
     width: 100%;
   }
+   /* Adjusting dropdown styles for mobile phones */
+  .dropdown-content {
+    width: 100%; /* Make dropdown full width */
+    left: 0; /* Align to the left */
+    transform: none; /* Remove transform to prevent overflow */
+    margin-top: 10px;
+  }
+
+  .dropdown-content a {
+    padding: 10px 14px;
+    font-size: 12px; /* Adjust font size for better readability */
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    display: block;
+    width: 100%;
+  }
+}
+
+/* Add transitions for a smoother appearance */
+.dropdown-content {
+  transition: all 0.3s ease-in-out; /* Smooth transition */
 }
