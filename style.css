@@ -729,7 +729,57 @@ padding: 40px 0 20px 0;
   position: relative;
   z-index: 3; /* Ensure the link is on top of everything */
 }
+#page-header.about-header{
+  background-image: url(img/about/banner.png);
+}
 
+/* Contact Page */
+
+#contact-details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+}
+#contact-details .details{
+  width: 40%;
+  color: whitesmoke;
+}
+#contact-details .details span{
+  font-size: 12px;
+
+}
+#contact-details .details h2{
+  font-size: 26px;
+  line-height: 35px;
+  padding: 20px 0;
+  color: whitesmoke;
+}
+#contact-details .details h3{
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+#contact-details .details li{
+  list-style: none;
+  display: flex;
+  padding: 10px 0;
+}
+#contact-details .details li i{
+  font-size: 14px;
+  padding-right: 22px;
+}
+#contact-details .details li p{
+  margin: 0;
+  font-size: 14px;
+}
+#contact-details .map{
+  width: 55%;
+  height: 400px;
+}
+#contact-details .map iframe{
+  width: 100%;
+  height: 100%;
+}
 
 /* Responsive Media App */
 @media (max-width: 1024px) {
